@@ -5,13 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './login/login.component';
-// import {MatFormFieldModule }from '@angular/material/m'
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
-// import {MatButtonModule} from '@angular/material';
-// import { MatRadioModule } from '@angular/material/radio';
 import {MatRadioModule} from '@angular/material/radio';
+
+import { LogintestComponent } from './logintest/logintest.component';
+import { AuthService } from './services/auth.service';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -21,6 +22,7 @@ import {MatRadioModule} from '@angular/material/radio';
   declarations: [
     AppComponent,
     LoginComponent,
+    LogintestComponent,
    
      ],
   imports: [
@@ -30,7 +32,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatFormFieldModule,
      MatInputModule,
     MatCardModule,
-    MatRadioModule
+    MatRadioModule,
+    FormsModule
     // MatButtonModule
 ],                
   providers: [],
