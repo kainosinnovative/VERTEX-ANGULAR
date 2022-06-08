@@ -1,48 +1,52 @@
+
 label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: 300 !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
+
 
 .login-main{
     margin-top: 10%;
     }
 
     .mat-card{
-   
     background-color: rgb(255 254 246 / 95%);
     padding: 27px !important;
+    width: 386px !important;
+    align-items: center;
     }
-
     .mat-card-actions{
         margin-bottom: 10px !important;
       }
+
       .mat-card-header .mat-card-title {
         margin-bottom: 2px;
-        margin-left: 118px;
-        font-size: 18px !important;
+        margin-left: 130px;
+        font-size: 16px !important;
         font-weight: bolder !important;
     }
     .textfeild{
-
-      width: 285px; 
+       width: 285px; 
        margin-left: 39px;
       font-size: 16px !important;
-      /* font-weight: 300px !important; */
-    }
+     }
+
     .icon{
       margin-left: -36px;
     font-size: 28px;
     color: blue;
     }
+
     .icon1{
   
-        margin-left: -36px;
+      margin-left: -36px;
       font-size: 31px;
       color: blue;
       }
+
       .btn{
         width: 80px;
         height: 28px;
@@ -53,21 +57,69 @@ label {
         border: none !important;
         color: white !important;
         margin-top: 2px;
-        /* border-color: #1593E4 !important; */
+        margin-left: 135px;
+        padding: 0px;
       }
 
       .mat-radio-button ~ .mat-radio-button {  
         margin-left: 16px;  
       } 
+
       .radiobtn{
         /* margin-left: 2px; */
         font-size: 16px !important;
       font-weight: 400 !important;
      margin-top: -19px;
       } 
+
       .mat-card:not([class*=mat-elevation-z]) {
         box-shadow: 0px 2px 1px -1px rgb(255 255 255), 0px 1px 4px 0px rgb(255 255 255), 0px 1px 3px 0px rgb(255 255 255);
       }
+      .emaillabel{
+          color: black; 
+          margin-left: -22px;
+      }
+      .emailinput{
+          padding-top: 5px;
+          padding-left: 44px; 
+          font-size: 14px !important;
+          border-bottom:none;
+          border-top: none;
+          border-left: none;
+          border-right: none; 
+          width: 296px !important;
+          margin-left:-36px !important; 
+          height: 30px !important;
+          margin-bottom: -11px;
+          font-weight: bold;
+          background-color: #e6ecfc;
+      }
+      .passwrdlbl{
+          color: black;
+          margin-left: -21px;
+      }
+      .passinpt{
+          font-size: 14px !important;
+          border-bottom: none;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+           height: 30px !important;
+           font-weight: bold;
+           background-color: #e6ecfc;
+           width: 296px !important;
+           margin-left: -36px !important;
+           padding-left: 44px;
+      }
+      @media screen and (max-width: 768px) {
+        
+        .mat-card{
+          background-color: rgb(255 254 246 / 95%);
+          padding: 27px !important;
+          width: 100% !important;
+          align-items: center;
+          margin-top: 133px !important;
+          margin-left: 0px !important;
+          }
 
-     
-    
+      }

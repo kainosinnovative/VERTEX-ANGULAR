@@ -5,30 +5,30 @@
 <div fxLayout="row" fxLayoutAlign="center center" class="login-main">
     <mat-card >
     <mat-card-header >
-      <mat-card-title style="padding-top: 23px !important;">Login Page</mat-card-title>
+      <mat-card-title >Login </mat-card-title>
     </mat-card-header>
     <mat-card-content fxLayout="column">
      
       <mat-form-field class="textfeild">
-       <label for="emailExample" style="color: gray; margin-left: -22px;">E-mail address</label>
+       <label for="emailExample" class="emaillabel">User ID </label>
        <div >
-      <i class="glyphicon glyphicon-envelope"></i>
-        <input  type="text" style="padding-top: 5px;padding-left: 44px; font-size: 14px !important;border-bottom:none;border-top: none;border-left: none;border-right: none; width: 296px !important;margin-left:-36px !important; height: 30px !important;margin-bottom: -11px;font-weight: bold;background-color: #e6ecfc;">
+        <i class="glyphicon glyphicon-user"></i>
+        <input  type="text" class="emailinput">
       </div>
     
      </mat-form-field>
 
-      <mat-form-field  class="textfeild" style="margin-top: -26px;">
-        <label for="emailExample" style="color: gray;margin-left: -21px;">Password</label>
+      <mat-form-field  class="textfeild" >
+        <label for="emailExample" class="passwrdlbl">Password</label>
        <div >
           <i class="glyphicon glyphicon-lock"></i>
-          <input type="password" style="font-size: 14px !important;border-bottom: none;border-top: none;border-left: none;border-right: none; height: 30px !important;font-weight: bold;background-color: #e6ecfc;width: 296px !important;margin-left: -36px !important;padding-left: 44px;">
+          <input type="password"  class="passinpt">
           </div>
         
       </mat-form-field>
     </mat-card-content>
 
-    <div class="form-check form-check-inline" class="radiobtn">
+    <!-- <div class="form-check form-check-inline" class="radiobtn">
       <input class="form-check-input" style="margin-left: 22px;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
       <label class="form-check-label" for="inlineRadio1" style="margin-left: 3px;">Kainos </label>
 
@@ -38,10 +38,10 @@
       <input class="form-check-input" style="margin-left: 55px;" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
       <label class="form-check-label radiobtn" for="inlineRadio3" style="margin-left: 3px;">Vendor </label>
     </div>
-    
+     -->
    
 
-    <mat-card-actions align="end">
+    <mat-card-actions>
       <button mat-raised-button color="primary" class="btn" >Login</button>
     </mat-card-actions>
     </mat-card>
