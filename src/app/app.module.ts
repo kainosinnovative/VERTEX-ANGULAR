@@ -13,7 +13,10 @@ import {MatRadioModule} from '@angular/material/radio';
 import { LogintestComponent } from './logintest/logintest.component';
 import { AuthService } from './services/auth.service';
 import {FormsModule} from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
+import { AuthInterceptor } from './services/authconfig.interceptor';
+import { SigninComponent } from './signin/signin.component';
 
 
 
@@ -23,6 +26,7 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     LoginComponent,
     LogintestComponent,
+    SigninComponent,
    
      ],
   imports: [
@@ -33,10 +37,15 @@ import {FormsModule} from '@angular/forms';
      MatInputModule,
     MatCardModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     // MatButtonModule
 ],                
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

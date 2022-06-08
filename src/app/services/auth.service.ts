@@ -25,11 +25,38 @@ export class AuthService {
     }
     localStorage.setItem("access_token", token);
     const decodedUser = this.jwtHelper.decodeToken(token);
-    console.log(decodedUser);
+    // console.log(decodedUser);
     this.userInfo.next(decodedUser);
     return true;
      }));
     }
     return of(false);
   }
+
+
+  getToken() {
+    return localStorage.getItem('access_token');
+  }
+  get isLoggedIn(): boolean {
+    let authToken = localStorage.getItem('access_token');
+    return authToken !== null ? true : false;
+  }
+  doLogout() {
+    let removeToken = localStorage.removeItem('access_token');
+    // if (removeToken == null) {
+    //   this.router.navigate(['log-in']);
+    // }
+  }
+
+  // signIn(user: User) {
+  //   return this.http
+  //     .post<any>(`${this.endpoint}/signin`, user)
+  //     .subscribe((res: any) => {
+  //       localStorage.setItem('access_token', res.token);
+  //       this.getUserProfile(res._id).subscribe((res) => {
+  //         this.currentUser = res;
+  //         this.router.navigate(['user-profile/' + res.msg._id]);
+  //       });
+  //     });
+  // }
 }
