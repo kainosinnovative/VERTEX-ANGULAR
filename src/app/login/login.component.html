@@ -13,7 +13,7 @@
        <label for="emailExample" class="emaillabel">User ID </label>
        <div >
         <i class="glyphicon glyphicon-user"></i>
-        <input [(ngModel)]="loginForm.UserId" name="UserId" type="text" class="emailinput">
+        <input [(ngModel)]="loginForm.UserId" name="UserId" type="text" class="emailinput" (keyup)="EmptyErrorMessage()">
       </div>
     
      </mat-form-field>
@@ -22,7 +22,7 @@
         <label for="emailExample" class="passwrdlbl">Password</label>
        <div >
           <i class="glyphicon glyphicon-lock"></i>
-          <input [(ngModel)]="loginForm.Password" type="password" name="Password"  class="passinpt">
+          <input [(ngModel)]="loginForm.Password" type="password" name="Password"  class="passinpt" (keyup)="EmptyErrorMessage()">
           </div>
         
       </mat-form-field>

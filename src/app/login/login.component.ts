@@ -30,8 +30,14 @@ export class LoginComponent implements OnInit {
     // alert("hi");
     // console.log(this.loginForm);
     // this.toastr.success('hi');
- 
+ if(this.loginForm.UserId == "") {
+  (document.getElementById('invalidid') as HTMLFormElement).innerHTML = "Enter your Userid";
+ }
+ else if(this.loginForm.Password == "") {
+  (document.getElementById('invalidid') as HTMLFormElement).innerHTML = "Enter your Password";
+ }
 
+else {
     this.http.post("http://localhost/VERTEX-PHP-API/"+'login/loginauth', this.loginForm).subscribe(
       
       data => {
@@ -78,7 +84,7 @@ localStorage.setItem('access_token', finaltoken1);
       }
     );
 
-    
+}
     
   }
 
@@ -95,5 +101,11 @@ localStorage.setItem('access_token', finaltoken1);
 	// console.log("data>>>>",data['UserId']);
     // return JSON.parse(jsonPayload);
 };
+
+EmptyErrorMessage() {
+  // alert("hi");
+  (document.getElementById('invalidid') as HTMLFormElement).innerHTML = "";
+ 
+}
 
 }
