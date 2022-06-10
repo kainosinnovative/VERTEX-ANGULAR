@@ -19,9 +19,9 @@ import { AuthInterceptor } from './services/authconfig.interceptor';
 import { SigninComponent } from './signin/signin.component';
 import { TestComponent } from './test/test.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
-
-
-
+// import { ToastrModule } from 'ngx-toastr';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,6 +34,10 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
    
      ],
   imports: [
+    ToastrModule.forRoot({
+      // positionClass: 'toast-center-center',
+      // timeOut: 2000,
+    }),
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
@@ -42,7 +46,8 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
     MatCardModule,
     MatRadioModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
     // MatButtonModule
 ],                
   providers: [{

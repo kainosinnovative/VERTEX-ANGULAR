@@ -3,8 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import { ToastrService } from 'ngx-toastr';
 import'fa-icons';
 // import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+// import { ToastrModule } from 'ngx-toastr';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,16 +19,17 @@ export class LoginComponent implements OnInit {
   };
   public invalidLogin: boolean = false;
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(private toastr: ToastrService,private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void {
    
   }
 
   userLogin() {
+    (<HTMLInputElement>document.getElementById("invalidid")).innerText = "";
     // alert("hi");
-    console.log(this.loginForm);
-
+    // console.log(this.loginForm);
+    // this.toastr.success('hi');
  
 
     this.http.post("http://localhost/VERTEX-PHP-API/"+'login/loginauth', this.loginForm).subscribe(
@@ -37,17 +40,25 @@ export class LoginComponent implements OnInit {
       },
       success => {
           console.log('Error>>>>>', success.status);
-          if(success.status == 404) {
+          // if(success.status == 404) {
          
             
-          }
+          // }
           
-          else if(success.status == 500) {
-            console.log("Invalid Credentials");
+          if(success.status == 404) {
+            let msg = success.error;
+           
+            // let text = "How are you doing today?";
+const myArray = msg.split("message");
+const secondArr = myArray[1].split(",");
+let str = secondArr[0].substring(3);
+var newStr = str.substring(0, str.length - 1);
+console.log(newStr);
+(document.getElementById('invalidid') as HTMLFormElement).innerHTML = newStr;
           }
           else {
             let msg3 = success.error.text;
-console.log(msg3);
+// console.log(msg3);
 // alert(msg3)
 var msg4 = msg3.split("token");
 // alert(msg4);

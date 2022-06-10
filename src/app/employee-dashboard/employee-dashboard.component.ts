@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-employee-dashboard',
   templateUrl: './employee-dashboard.component.html',
@@ -24,6 +26,10 @@ export class EmployeeDashboardComponent implements OnInit {
         });
       
         
+      }
+
+      notify() {
+        alert("hi");
       }
 
 }
