@@ -16,7 +16,7 @@ export class LogintestComponent implements OnInit {
   }
 
   userLogin() {
-    // alert(this.loginForm.username);
+    alert(this.loginForm.username);
     this.authService.userLogin(this.loginForm)
     .subscribe(
     (value) => {

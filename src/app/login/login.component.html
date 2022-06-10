@@ -8,12 +8,12 @@
       <mat-card-title >Login </mat-card-title>
     </mat-card-header>
     <mat-card-content fxLayout="column">
-     
+      <form class="form-signin"  method="get">
       <mat-form-field class="textfeild">
        <label for="emailExample" class="emaillabel">User ID </label>
        <div >
         <i class="glyphicon glyphicon-user"></i>
-        <input  type="text" class="emailinput">
+        <input [(ngModel)]="loginForm.UserId" name="UserId" type="text" class="emailinput">
       </div>
     
      </mat-form-field>
@@ -22,10 +22,11 @@
         <label for="emailExample" class="passwrdlbl">Password</label>
        <div >
           <i class="glyphicon glyphicon-lock"></i>
-          <input type="password"  class="passinpt">
+          <input [(ngModel)]="loginForm.Password" type="password" name="Password"  class="passinpt">
           </div>
         
       </mat-form-field>
+      </form>
     </mat-card-content>
 
     <!-- <div class="form-check form-check-inline" class="radiobtn">
@@ -42,7 +43,7 @@
    
 
     <mat-card-actions>
-      <button mat-raised-button color="primary" class="btn" >Login</button>
+      <button mat-raised-button color="primary" (click)="userLogin()" class="btn" >Login</button>
     </mat-card-actions>
     </mat-card>
     </div>
