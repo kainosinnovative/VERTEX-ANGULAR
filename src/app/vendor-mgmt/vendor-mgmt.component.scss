@@ -1,0 +1,330 @@
+input[type=button] {
+    padding: 5px 23px;
+    background: #1593E4;
+    border: 0 none;
+    /* cursor: pointer;
+    -webkit-border-radius: 5px; */
+    border-radius: 100px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 41px;
+    height: 17px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 14px;
+    left: -1px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .fixedwidthcls {
+    width: 120px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .username{
+        width: 243px !important;
+        height: 28px;
+    }
+
+    .vendortype{
+        width: 243px !important;
+        height: 28px;
+    }
+
+    .vendortypelabel{
+        padding-left: 53px;
+
+    }
+   .Generaldiv{
+      border: 2px solid black !important;
+      width: 90%;
+    }
+    .Legalbusiness{
+      width: 300px !important;
+      height: 28px;
+    }
+    .Federal{
+      width: 243px !important;
+      height: 28px;
+    }
+    .Physicaladdress{
+      width: 311px !important;
+      height: 28px;
+    }
+    .State{
+      width: 25%;
+      height: 28px;
+    }
+    .city{
+      width: 225px !important;
+      height: 28px;
+    }
+    .zip{
+      width: 68px !important;
+      height: 28px;
+    }
+    .County{
+      width: 225px !important;
+     height: 28px;
+    }
+    .Country{
+      width: 243px !important;
+      height: 28px;
+    }
+    .Mailingaddress{
+      width: 325px;
+    }
+    .Vendortype{
+      width: 243px !important;
+      height: 28px;
+    }
+    .DUNSno{
+      width: 25%;
+      height: 28px;
+    }
+    .Mailingaddress1{
+      width: 311px !important;
+      height: 28px;
+    }
+    .City1{
+      width: 225px !important;
+      height: 28px;
+    }
+    .zip1{
+      width: 68px !important;
+       height: 28px;
+    }
+    .County1{
+      width: 225px !important; 
+      height: 28px;
+    }
+    .Country1{
+      width: 243px !important;
+      height: 28px;
+    }
+    .Businesswebsite{
+      width: 243px !important; 
+      height: 28px;
+    }
+    .Contactperson{
+      width: 200px !important;
+      height: 28px;
+    }
+    .Businessphone{
+      width: 117px !important;
+      height: 28px;
+    }
+    .Title{
+      width: 243px !important;
+      height: 28px;
+    }
+    .Businessemail{
+      width: 243px !important;
+      height: 28px;
+    }
+    .Businessregistered{
+        width: 325px;
+    }
+    .businessfranchisee{
+        width: 325px;
+    }
+    .Wouldyoulike{
+        width: 325px;
+    }
+    .btndiv{
+        padding-right: 160px; 
+        text-align: right;
+    }
+    .businessregistered1{
+        width: 408px;
+    }
+    .Vendortitle{
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .username{
+        width: 220px !important;
+        height: 28px;
+    }
+
+    .vendortype{
+        width: 220px !important;
+        height: 28px;
+      
+    }
+    .vendortypelabel{
+      padding-top: 8px;
+      
+  }
+  .Generaldiv{
+      border: 1px solid black !important;
+      width: 100%;
+      margin-left: 11px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+    .Legalbusiness{
+      width: 188px !important;
+      height: 28px;
+    }
+    .Federal{
+      width: 188px !important;
+       height: 28px;
+    }
+    .Physicaladdress{
+      width: 188px !important;
+      height: 28px;
+    }
+    .State{
+      width: 25%;
+      height: 28px;
+    }
+    .city{
+      width: 190px !important;
+      height: 28px;
+    }
+    .zip{
+      width: 68px !important;
+      height: 28px;
+    }
+    .County{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Country{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Mailingaddress{
+      width: 321px;
+    }
+    .Vendortype{
+      width: 190px !important;
+      height: 28px;
+    }
+    .DUNSno{
+      width: 25%;
+      height: 28px;
+    }
+    .Mailingaddress1{
+      width: 190px !important;
+      height: 28px;
+    }
+    .City1{
+      width: 190px !important;
+      height: 28px;
+    }
+    .zip1{
+      width: 68px !important;
+       height: 28px;
+    }
+    .County1{
+      width: 190px !important; 
+      height: 28px;
+    }
+    .Country1{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Businesswebsite{
+      width: 190px !important; 
+      height: 28px;
+    }
+    .Contactperson{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Businessphone{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Title{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Businessemail{
+      width: 190px !important;
+      height: 28px;
+    }
+    .Businessregistered{
+        width: 322px;
+    }
+    .businessfranchisee{
+        width: 322px;
+    }
+    .Wouldyoulike{
+        width: 322px;
+    }
+    .btndiv{
+        padding-right: 56px;
+        text-align: right;
+    }
+    .businessregistered1{
+        width: 322px;
+    }
+}
