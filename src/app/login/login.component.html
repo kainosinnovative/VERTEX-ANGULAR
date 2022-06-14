@@ -3,7 +3,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <div fxLayout="row" fxLayoutAlign="center center" class="login-main">
-    <mat-card >
+    <mat-card class="login">
     <mat-card-header >
       <mat-card-title >Login </mat-card-title>
     </mat-card-header>
@@ -13,7 +13,7 @@
        <label for="emailExample" class="emaillabel">User ID </label>
        <div >
         <i class="glyphicon glyphicon-user"></i>
-        <input [(ngModel)]="loginForm.UserId" name="UserId" type="text" class="emailinput" (keyup)="EmptyErrorMessage()">
+        <input  [(ngModel)]="loginForm.UserId" name="UserId" type="text" class="emailinput" (keyup)="EmptyErrorMessage()">
       </div>
     
      </mat-form-field>

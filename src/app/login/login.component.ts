@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+// import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
-import { ToastrService } from 'ngx-toastr';
-import'fa-icons';
+// import { environment } from 'src/environments/environment';
+// import { ToastrService } from 'ngx-toastr';
+// import'fa-icons';
 // import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 // import { ToastrModule } from 'ngx-toastr';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   loginForm = {
@@ -19,7 +19,9 @@ export class LoginComponent implements OnInit {
   };
   public invalidLogin: boolean = false;
 
-  constructor(private toastr: ToastrService,private router: Router, private http: HttpClient) { }
+  constructor(
+    // private toastr: ToastrService,
+    private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void {
    
@@ -103,7 +105,7 @@ localStorage.setItem('access_token', finaltoken1);
 };
 
 EmptyErrorMessage() {
-  // alert("hi");
+//   // alert("hi");
   (document.getElementById('invalidid') as HTMLFormElement).innerHTML = "";
  
 }
