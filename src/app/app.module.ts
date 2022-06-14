@@ -13,11 +13,13 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // import {MatFormFieldModule} from '@angular/material/form-field';
 import { AuthInterceptor } from './services/authconfig.interceptor';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { VendordetailComponent } from './vendordetail/vendordetail.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    VendordetailComponent
   ],
   imports: [
     BrowserModule,
