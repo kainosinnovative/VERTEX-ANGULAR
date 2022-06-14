@@ -1,10 +1,11 @@
 input[type=button] {
-    padding: 5px 23px;
+    padding: 4px 27px;
     background: #1593E4;
     border: 0 none;
     /* cursor: pointer;
     -webkit-border-radius: 5px; */
     border-radius: 100px;
+    font-size: 12px !important;
 }
 
 p {
@@ -76,7 +77,7 @@ p {
   }
 
   .fixedwidthcls {
-    width: 120px;
+    width: 109px;
 }
 
 
@@ -94,12 +95,14 @@ p {
     }
 
     .vendortypelabel{
-        padding-left: 53px;
+        padding-left: 72px;
 
     }
    .Generaldiv{
-      border: 2px solid black !important;
-      width: 90%;
+      border: 1px solid black !important;
+      width: 77%;
+      padding-top: 7px;
+      padding-bottom: 5px;
     }
     .Legalbusiness{
       width: 300px !important;
@@ -194,8 +197,9 @@ p {
         width: 325px;
     }
     .btndiv{
-        padding-right: 160px; 
+        padding-right: 320px; 
         text-align: right;
+        padding-top: 15px;
     }
     .businessregistered1{
         width: 408px;
@@ -206,6 +210,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
+    .usernamediv{
+        margin-left: 24px;
+    }
 
     .username{
         width: 220px !important;
@@ -327,4 +335,5 @@ p {
     .businessregistered1{
         width: 322px;
     }
+
 }
