@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-5 innerlinefont vendortypelabel usernamediv">
                 <label class="labelwidth"> Vendor Type</label>
-                <select class="vendortype" id="vendor_type" (keyup)="EmptyErrorMessage('errormessage1')">
+                <select class="vendortype" id="vendor_type" (keyup)="EmptyErrorMessage('errormessage1')" (change)="Displayvendortype()">
                     <option value="individual">Individual</option>
                     <option value="business">Business</option>
                 </select>
@@ -23,11 +23,90 @@
         </div>
 
 <!-- Vendor Individual Start -->
+<div id="vendor_individual">
+
+    <p class="mainheading heading">Contact Information</p>
+
+<div class="row Generaldiv individual">
+  <div class="col-sm-6 innerlinefont" >  
+
+    <div class="labelheight">
+        <label class="labelwidth">First Name</label>    
+        <input type="text" class="firstname">
+    </div>
+        <div class="labelheight">
+            <label class="labelwidth">Last Name</label>
+        <input type="text" class="lastname"><br>
+        </div>
+        <div class="labelheight">
+            <label class="labelwidth">Middle Name</label>
+            <input type="text" class="middlename"><br>
+        </div>
+        <div class="labelheight">
+            <label class="labelwidth">Phone</label>
+            <input type="text" class="phone"><br>
+        </div>
+        <div class="labelheight">
+            <label class="labelwidth">Social Security Number</label>
+            <input type="text" class="social" ><br>
+        </div>
+        <div class="labelheight">
+            <label class="labelwidth">Email</label>
+            <input type="email" class="emailt"><br>
+        </div>
+
+        <div class="labelheight">
+        <label class="wouldla">Would you like to receive outreach emails from us ?</label>
+        <!-- <label style="width:10px;"></label> -->
+                        <label class="switch">
+                        <input  type="checkbox" name="active" id="active" checked>
+                        <span class="slider round"></span>
+                        </label></div>
+    </div>
+
+
+  <div class="col-sm-6 innerlinefont">
+    <div class="labelheight">
+        <label class="labelwidth">Physical Address</label>
+        <input type="text" class="physicalt"><br>
+    </div>
+    <div class="labelheight">
+        <label class="labelwidth">State/Province</label>
+        <select type="text" class="statet">
+            <option value="Virginia">Virginia</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="California">California</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Washington">Washington</option>
+        </select>
+    </div>
+    <div class="labelheight">
+        <label class="labelwidth">City</label>
+        <input type="text" class="cityt"><br>
+    </div>
+    <div class="labelheight">
+        <label class="labelwidth">Zip Code</label>
+        <input type="text" style="width:68px" class="zipt"><br>
+    </div>
+    <div class="labelheight">
+        <label class="labelwidth">County</label>
+        <input type="text" class="countyt"><br>
+    </div>
+    <div class="labelheight">
+        <label class="labelwidth">Country</label>
+        <select type="text" class="countryt">
+            <option value="USA">USA</option>
+        </select>  
+    </div>       
+  </div>
+</div>
+</div>
 <!-- Vendor Individual End -->
 
  <!-- Vendor Business Start -->
-<div id="vendor_business">
-        <p class="mainheading">General Information</p>
+<div id="vendor_business" style="display: none;">
+        <p class="mainheading heading">General Information</p>
 
         <div class="row Generaldiv" >
 
@@ -229,7 +308,7 @@
         </div>
 
  <!-- </div>  -->
- <p class="mainheading" style=" padding-bottom: 5px; padding-top: 16px;">Contact Information</p>
+ <p class="mainheading heading" style=" padding-bottom: 5px; padding-top: 16px;">Contact Information</p>
 
  <div class="row Generaldiv">
 
@@ -277,7 +356,7 @@
 
      </div>
  </div>
-<div>
+</div>
  <!-- vendor Business End -->
 
  <div class="btndiv">

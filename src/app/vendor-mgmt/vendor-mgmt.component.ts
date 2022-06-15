@@ -144,7 +144,26 @@ EmptyErrorMessage(errormessage: any) {
   }
 
   
+Displayvendortype(){
 
+  let vendor_details = (<HTMLInputElement>document.getElementById("vendor_type")).value;
+  //  alert(vendor_details);
+
+  if(vendor_details == "business"){
+//  alert("hi");
+    (<HTMLInputElement>document.getElementById("vendor_business")).style.display ="block";
+    (<HTMLInputElement>document.getElementById("vendor_individual")).style.display ="none";
+    
+  }
+  else{
+
+    // alert("test");
+    (<HTMLInputElement>document.getElementById("vendor_individual")).style.display ="block";
+    (<HTMLInputElement>document.getElementById("vendor_business")).style.display ="none";
+    
+  }
+
+}
  
 
 }
