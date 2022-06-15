@@ -14,12 +14,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './services/authconfig.interceptor';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { VendordetailComponent } from './vendordetail/vendordetail.component';
+import { VendorMgmtComponent } from './vendor-mgmt/vendor-mgmt.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EmployeeDashboardComponent,
-    VendordetailComponent
+    VendordetailComponent,
+    VendorMgmtComponent
   ],
   imports: [
     BrowserModule,

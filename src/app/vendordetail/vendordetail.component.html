@@ -1,37 +1,48 @@
-<h1>Vendor Details</h1>
-<div class="row" style="margin-left: 13px;">
-    <div class="col-sm-6">
-        <label class="username">User Name</label>
+<div class="container">
+<p class="mainheading maintitle">Vendor Details</p>
+<div class="row" style="padding-bottom: 8px;">
+    <div class="col-sm-5 innerlinefont ">
+        <label class="labelname">User Name</label>
         <input type="text" class="username1" style="margin-left: 50px;" disabled>
     </div>
-    <div class="col-sm-6">
-        <label class="vendortypel">Vender type</label>
-        <select type="text" class="venderoption">
+    <div class="col-sm-4 innerlinefont vendortypecol">
+        <label class="labelnamev">Vender Type</label>
+        <select type="text" class="vendoroption">
             <option value="Individual">Individual</option>
-            <option value="business">business</option>
-        </select><br>
+            <option value="business">Business</option>
+        </select>
        
     </div>
 </div>
-<h2 class="contactinformation">contact information</h2>
-<div class="row contentrow" style="margin-left:2px !important;margin-right:115px !important;padding-top:5px !important;margin-top:0px !important;margin-bottom:0 px !important;padding-bottom:0px !important;">
-  <div class="col-sm-6 col1">  
-    
-        <label class="firstnamel">First Name</label>    
-        <input type="text" class="firstname"><br>
-    
-        <label class="lastnamel">Last Name</label>
+<p class="mainheading">Contact Information</p>
+<div class="row contentrow">
+  <div class="col-sm-6 innerlinefont" style="margin-top: 7px;">  
+    <div class="labelinfo">
+        <label class="labelname1">First Name</label>    
+        <input type="text" class="firstname">
+    </div>
+        <div class="labelinfo">
+            <label class="labelname1">Last Name</label>
         <input type="text" class="lastname"><br>
-        <label class="middlenamel">Middle Name</label>
-        <input type="text" class="middlename"><br>
-        <label class="phonel">Phone:</label>
-        <input type="text" class="phone"><br>
-        <label class="socialsecl">Social security number</label>
-        <input type="text" class="city" ><br>
-        <label class="emaill">Email:</label>
-        <input type="email" class="city"><br>
-        <label class="wouldla">Would you like to receive out reach emails from us ?</label>
-        <label style="width:10px;"></label>
+        </div>
+        <div class="labelinfo">
+            <label class="labelname1">Middle Name</label>
+            <input type="text" class="middlename"><br>
+        </div>
+        <div class="labelinfo">
+            <label class="labelname1">Phone</label>
+            <input type="text" class="phone"><br>
+        </div>
+        <div class="labelinfo">
+            <label class="labelname1">Social Security Number</label>
+            <input type="text" class="social" ><br>
+        </div>
+        <div class="labelinfo">
+            <label class="labelname1">Email</label>
+            <input type="email" class="emailt"><br>
+        </div>
+        <label class="wouldla">Would you like to receive outreach emails from us ?</label>
+        <!-- <label style="width:10px;"></label> -->
                         <label class="switch">
                         <input  type="checkbox" name="active" id="active" checked>
                         <span class="slider round"></span>
@@ -39,32 +50,44 @@
     </div>
 
 
-  <div class="col-sm-6">
- <label class="col2" class="physicall">Physical Address</label>
-        <input type="text" style="width:308px" class="physical"><br>
-        <label class="col2" class="statel">state/province</label>
-        <select type="text" style="width: 100px;">
+  <div class="col-sm-6" style="font-size:12px !important; margin-top: 7px;;">
+    <div class="labelinfo">
+        <label class="physicall">Physical Address</label>
+        <input type="text" style="width:308px" class="physicalt"><br>
+    </div>
+    <div class="labelinfo">
+        <label class="labelname2">State/Province</label>
+        <select type="text" style="width: 100px;" class="statet">
             <option value="Virginia">Virginia</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
             <option value="California">California</option>
             <option value="Ohio">Ohio</option>
             <option value="Washington">Washington</option>
-        </select><br>
-        <label class="cityl">City</label>
-        <input type="text" class="city"><br>
-        <label class="zipl">Zip code</label>
-        <input type="text" style="width:68px" class="zipcode"><br>
-        <label class="countyl">County</label>
-        <input type="text" class="county"><br>
-        <label class="countryl">Country</label>
-        <select type="text" class="country">
+        </select>
+    </div>
+    <div class="labelinfo">
+        <label class="labelname2">City</label>
+        <input type="text" class="cityt"><br>
+    </div>
+    <div class="labelinfo">
+        <label class="labelname2">Zip Code</label>
+        <input type="text" style="width:68px" class="zipt"><br>
+    </div>
+    <div class="labelinfo">
+        <label class="labelname2">County</label>
+        <input type="text" class="countyt"><br>
+    </div>
+    <div class="labelinfo">
+        <label class="labelname2">Country</label>
+        <select type="text" class="countryt">
             <option value="USA">USA</option>
-        </select>   
+        </select>  
+    </div>       
   </div>
 </div><br>
-<div style="text-align:right;margin-right: 115px;">
-<input type="button"  class="btn btn-primary fixedwidthcls1" value="Cancel">
-<input type="button"  class="btn btn-primary fixedwidthcls2" value="Save">           
+<div class="buttons">
+<input type="button"  class="btn btn-primary fixedwidthcls" value="Cancel"> &nbsp;&nbsp;
+<input type="button"  class="btn btn-primary fixedwidthcls" value="Save">           
 </div>
-
+</div>

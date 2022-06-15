@@ -3,11 +3,11 @@
   width: 280px;
   font-size: 12px;
 } */
-.contentrow{
-    border: 2px solid;
-    margin-left: 2px;
-    height: 320px;
-  }
+// .contentrow{
+//     border: 2px solid;
+//     margin-left: 2px;
+//     height: 320px;
+//   }
   input[type=button] {
       padding:0px;
       background: #1593E4;
@@ -15,231 +15,287 @@
       cursor: pointer;
       -webkit-border-radius: 5px;
       border-radius: 100px;
+      height: 34px;
+      width: 120px;
       
   }
-  select{
-    font-size: 12px;
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 41px;
+    height: 17px;
   }
-  input[type=text] {
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 14px;
+    left: -1px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+   
+  @media screen and (min-width: 768px) {
+    .labelname{
+      width: 130px;
+      height: 35px;
+      font-size: 12px;
+    }
+    .labelnamev{
+      width: 130px;
+      height: 35px;
+      font-size: 12px;
+    }
+    .labelname1{
+      width: 170px;
+      height: 35px;
+    }
+    .labelname2{
+      width: 130px;
+      height: 35px;
+      font-size: 12px;
+    }
+    .physicall{
+      width: 130px;
+      height: 35px;
+      font-size: 12px;
+    }
+  .maintitle{
+    padding-bottom: 8px;
+  }
+  .username1{
+    width: 243px !important;
+        height: 28px;
+        font-size: 12px;
+  }
+  .vendortypecol{
+    padding-left: 53px;
+  }
+  .vendoroption
+  {
+  width: 243px !important;
    height: 28px;
    font-size: 12px;
   }
-  
-  .switch {
-      position: relative;
-      display: inline-block;
-      width: 47px;
-      height: 22px;
-    }
-    
-    .switch input { 
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 12px;
-      width: 16px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    
-    input:checked + .slider {
-      background-color: #2196F3;
-    }
-    
-    input:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
-    
-    input:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
-    
-    /* Rounded sliders */
-    .slider.round {
-      border-radius: 34px;
-    }
-    
-    .slider.round:before {
-      border-radius: 50%;
-    }
-    .fixedwidthcls1 {
-      width: 90px;
-      margin-right: 10px;
+  .contentrow{
+    border: 2px solid black !important;
+    width: 90%;
   }
-  .fixedwidthcls2 {
-    width: 90px;
-    margin-left: 10px;
-  }
-  .vendortypel{
-    width: 110px;
-  }
- 
-  .username{
-    width: 115px;
-  
-  }
-  .firstnamel{
-    height: 37px;
-    width: 280px;
+  .firstname{
+    width: 200px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .lastnamel{
-    height: 37px;
-    width: 280px;
+  .lastname{
+    width: 200px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .middlenamel{
-    height: 37px;
-    width: 280px;
+  .middlename{
+    width: 200px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .phonel{
-    height: 37px;
-    width: 280px;
+  .phone{
+    width: 117px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .socialsecl{
-    height: 37px;
-    width: 280px;
+  .social{
+    width: 85px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .emaill{
-    height: 37px;
-    width: 280px;
+  .emailt{
+    width: 243px !important;
+    height: 28px;
     font-size: 12px;
   }
   .wouldla{
+    width: 311px !important;
+    height: 28px;
     font-size: 12px;
   }
-  .physicall{
-    height: 37px;
-    width: 280px;
+  .physicalt{
+    width: 243px;
+    height: 28px;
     font-size: 12px;
   }
-  .statel{
-    height: 37px;
-    width: 280px;
-    font-size: 12px;
-  }
-  .cityl{
-    height: 37px;
-    width: 280px;
-    font-size: 12px;
-  }
-  .zipl{
-    height: 37px;
-    width: 280px;
-    font-size: 12px;
-  }
-  .countyl{
-    height: 37px;
-    width: 280px;
-    font-size: 12px;
-  }
-  .countryl{
-    height: 37px;
-    width: 280px;
-    font-size: 12px;
-  }
-  
-  .phone{
-    width: 117px;
-  }
-  .firstname{
-    width: 200px;
-  }
-  .lastname{
-    width: 200px;
-  }
-  .middlename{
-    width: 200px;
-  }
-  
-  h1{
-    margin-left: 20px;
-    font-size: 16px;
-  }
-  h2{
-    margin-left: 20px;
-    font-size: 12px;
-  }
-  @media screen and (max-width: 758px){
-    .username1{
-        height: 20px !important;
-    }
-  .vendortypel{
-    width: 165px;
-  }
-  .contentrow{
-    border: 2px solid;
-    margin-left: 0px;
-    height: 840px;
-    width: 340px;
-  }
-  .h1{
-    font-size: 16px !important;
-    font-weight: 700;
-  }
-  .firstnamel{
-    height: 30px;
+  .statet{
     width: 100px;
+    height: 28px;
     font-size: 12px;
   }
-  .lastnamel{
-    height: 30px;
-    width: 100px;
+  .cityt{
+    width: 225px;
+    height: 28px;
     font-size: 12px;
   }
-  .middlenamel{
-    height: 30px;
-    width: 100px;
+  .zipt{
+    width: 68px;
+    height: 28px;
     font-size: 12px;
   }
-  .phonel{
-    height: 30px;
-    width: 100px;
+  .countyt{
+    width: 225px;
+    height: 28px;
     font-size: 12px;
   }
-  .socialsecl{
-    height: 55px;
-    width: 100px;
+  .countryt{
+    width: 225px;
+    height: 28px;
     font-size: 12px;
   }
-  .emaill{
-    height: 30px;
-    width: 100px;
-    font-size: 12px;
+  .labelinfo{
+    height: 34px;
   }
-  .physicall{
-    height: 12px;
-    width: 100px;
-    font-size: 12px;
+  .buttons{
+    margin-right: 80px;
+    padding-right: 56px;
+        text-align: right;
   }
-  .col1{
-    width: 370px;
-    height: 100px;
+  .fixedwidthcls{
+    
+    width: 120px;
   }
+}
+@media screen and (max-width: 768px) {
+  .labelname{
+    margin-left: 10px !important;
+    width: 90px !important;
+    height: 36px !important;
   }
-  
+  .labelnamev{
+    height: 28px;
+    width: 140px !important;
+    margin-left: 10px;
+  }
+  .labelname1{
+    width: 140px !important;
+  }
+  .labelname2{
+    width: 135px !important;
+  }
+ .username2{
+  width: 220px !important;
+ }
+ .labelinfo{
+  height: 36px !important;
+ }
+ .physicall{
+  width: 135px !important;
+ }
+ .username1{
+  width: 170px;
+  height: 28px;
+ }
+ .vendoroption{
+  width: 170px;
+  height: 28px;
+ }
+ .firstname{
+  width: 170px;
+  height: 28px;
+ }
+ .lastname{
+  width: 170px;
+  height: 28px;
+ }
+ .middlename{
+  width: 170px;
+  height: 28px;
+ }
+ .phone{
+  width: 117px;
+  height: 28px;
+ }
+ .social{
+  width: 85px;
+  height: 28px;
+ }
+ .emailt{
+  width: 170px;
+  height: 28px;
+ }
+ .physicalt{
+  width: 175px !important;
+  height: 28px;
+ }
+ .statet{
+  width: 100px;
+  height: 28px;
+ }
+ .cityt{
+   width: 150px;
+   height: 28px;
+ }
+ .zipt{
+  height: 28px;
+  width: 65px !important;
+ }
+.countyt{
+  width: 150px;
+   height: 28px;
+}
+.countryt{
+  width: 175px !important;
+  height: 28px;
+}
+ .contentrow{
+  border: 1px solid black !important;
+  width: 100%;
+  height: 80%;
+  margin-left: 2px;
+  margin-right: 0px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+ }
+ .buttons{
+  margin-left: 40px !important;
+ }
+
+}
