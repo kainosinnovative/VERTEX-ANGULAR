@@ -41,7 +41,7 @@ export class VendorMgmtComponent implements OnInit {
 
 
       if(user_name == ""){
-        (document.getElementById('errormessage') as HTMLFormElement).innerHTML = "Enter your Username";
+        (document.getElementById('errormessage') as HTMLFormElement).innerHTML = "Enter the User Name";
         (document.getElementById('errormessage') as HTMLFormElement).focus();
       }
       else if(vendor_type == ""){
@@ -51,7 +51,7 @@ export class VendorMgmtComponent implements OnInit {
       }
 
       else if(Legal_business == ""){
-        (document.getElementById('errormessage2') as HTMLFormElement).innerHTML = "Enter your Legal Business Name";
+        (document.getElementById('errormessage2') as HTMLFormElement).innerHTML = "Enter the Legal Business Name";
         (document.getElementById('errormessage2') as HTMLFormElement).focus();
       }
       else if(federal == ""){
