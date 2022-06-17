@@ -1,3 +1,58 @@
+
+.accordion::before {
+  content: "+" !important;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    margin-right: 9px;
+}
+
+.active:after {
+  content: "\2212" !important;
+}
+
+.accordion {
+  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 17%), 0px 1px 0px -1px rgb(0 0 0 / 14%), 0px 3px 0px -1px rgb(0 0 0 / 12%);
+  margin: 12px;
+  margin-left: -10px;
+
+  
+}
+
+.title {
+padding: 0px;
+margin-top: -8px;
+margin-left: 8px;
+margin-bottom: 2px;
+font-size: 12px !important;
+font-weight: 600;
+}
+
+.content {
+padding: 12px;
+}
+
+.content-container {
+overflow: hidden;
+max-height: 0;
+}
+
+.content-container.opened {
+max-height: none;
+}
+
+.content-container.opened2 {
+max-height: none;
+}
+
+.toggledesign{
+  background: #1593E4;
+  border-radius: 0px;
+  font-size: 12px !important;
+  height: 29px;
+  width: 100px;
+}
+
 input[type=button] {
     padding: 4px 27px;
     background: #1593E4;
@@ -12,9 +67,6 @@ p {
     margin-top: 0;
     margin-bottom: 0rem !important;
 }
-
-
-
 
 .switch {
     position: relative;
@@ -85,6 +137,14 @@ p {
 
 @media screen and (min-width: 768px) {
 
+  .vendor_btn{
+    padding: 4px 27px;
+    background: #1593E4;
+    border: 0 none;
+    border-radius: -16px;
+    font-size: 12px !important;
+  }
+
 
   .individual{
     height: 248px important;
@@ -125,7 +185,7 @@ p {
       height: 28px;
     }
     .State{
-      width: 25%;
+      width: 170px !important;
       height: 28px;
     }
     .city{
@@ -133,7 +193,7 @@ p {
       height: 28px;
     }
     .zip{
-      width: 68px !important;
+      width: 130px !important;
       height: 28px;
     }
     .County{
@@ -156,7 +216,7 @@ p {
       height: 28px;
     }
     .Mailingaddress1{
-      width: 311px !important;
+      width: 292px !important;
       height: 28px;
     }
     .City1{
@@ -164,7 +224,7 @@ p {
       height: 28px;
     }
     .zip1{
-      width: 68px !important;
+      width: 130px !important;
        height: 28px;
     }
     .County1{
@@ -209,6 +269,11 @@ p {
         text-align: right;
         padding-top: 15px;
     }
+    .btndiv1{
+      padding-right: 156px; 
+      text-align: right;
+      // padding-top: 15px;
+  }
     .businessregistered1{
         width: 408px;
     }
@@ -267,10 +332,10 @@ p {
     width: 225px;
     height: 28px;
    }
-  .statet{
-    width: 100px;
-    height: 28px;
-  }
+  // .statet{
+  //   width: 100px;
+  //   height: 28px;
+  // }
 }
 
 @media screen and (max-width: 768px) {
